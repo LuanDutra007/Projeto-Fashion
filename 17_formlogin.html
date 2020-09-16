@@ -1,0 +1,70 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <style>      
+            .formLogin{
+                width: 250px;
+                margin: 50px auto 0;
+                font-family: sans-serif;    
+            }
+            .formLogin fieldset{
+                background: #ccc;
+            }
+            .formLogin legend{
+                background: white;
+                display: inline-block;
+                padding: 10px;
+            }
+            .formLogin label{
+                margin-top: 15px;
+                display: block;
+                margin-bottom: 5px;
+            }
+            #user,#pass, .btn{
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 15px;
+                font-size: 18px;
+                border: none;
+            }
+            #user:focus #pass:focus{
+                background: rgb(173, 172, 172);
+            }
+            .btn{
+                margin: 15px auto;
+                background: rgba(151, 149, 149, 0.801)
+            }
+            .btn:hover{
+                background: rgba(160, 158, 158, 0.562);
+            }
+            .user{
+                margin bottom: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo de formulario</h1>
+        
+        <form action="#" method="POST" class="formLogin"> 
+            <fieldset>
+                <legend>Loguin</legend>
+
+                <label for="user">Digite sua senha</label>
+                <input type="text" id="user" name="user" autofocus>
+                
+                <label for="pass">Digite a sua senha</label>
+                <input type="password" id="pass" name="pass">
+
+                <input type="submit" value="logar" class="btn">
+            </fieldset>       
+        </form>
+    </body>
+</html>
